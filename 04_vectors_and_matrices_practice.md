@@ -10,14 +10,15 @@
 
 Вектор — упорядоченный набор чисел. Например,
 
-$$
+```math
 \mathbf{x}=
 \begin{bmatrix}
 2\\
 -1\\
 5
 \end{bmatrix}.
-$$
+```
+
 
 Сложение и вычитание векторов выполняются по координатам.
 
@@ -25,7 +26,7 @@ $$
 
 Даны
 
-$$
+```math
 \mathbf{a}=
 \begin{bmatrix}
 2\\
@@ -39,7 +40,8 @@ $$
 5\\
 -2
 \end{bmatrix}.
-$$
+```
+
 
 Найдите:
 
@@ -48,77 +50,79 @@ $$
 3. $2\mathbf{a}$;
 4. $-\mathbf{b}$.
 
-<details>
-<summary><strong>Решение</strong></summary>
+#### Решение
 
-$$
+
+```math
 \mathbf{a}+\mathbf{b}=
 \begin{bmatrix}
 5\\
 4\\
 2
 \end{bmatrix}.
-$$
+```
 
-$$
+
+```math
 \mathbf{a}-\mathbf{b}=
 \begin{bmatrix}
 -1\\
 -6\\
 6
 \end{bmatrix}.
-$$
+```
 
-$$
+
+```math
 2\mathbf{a}=
 \begin{bmatrix}
 4\\
 -2\\
 8
 \end{bmatrix}.
-$$
+```
 
-$$
+
+```math
 -\mathbf{b}=
 \begin{bmatrix}
 -3\\
 -5\\
 2
 \end{bmatrix}.
-$$
+```
 
-</details>
 
 ### Задача 2
 
 Объект описан вектором признаков
 
-$$
+```math
 \mathbf{x}=
 \begin{bmatrix}
 8\\
 2\\
 5
 \end{bmatrix}.
-$$
+```
+
 
 После преобразования первый признак уменьшают в $2$ раза, второй оставляют без изменений, третий увеличивают в $3$ раза. Запишите новый вектор.
 
-<details>
-<summary><strong>Решение</strong></summary>
+#### Решение
+
 
 Новый вектор:
 
-$$
+```math
 \mathbf{x}_{\text{new}}=
 \begin{bmatrix}
 4\\
 2\\
 15
 \end{bmatrix}.
-$$
+```
 
-</details>
 
 ---
 
@@ -126,42 +130,44 @@ $$
 
 Евклидова длина вектора:
 
-$$
+```math
 \|\mathbf{x}\|_2=\sqrt{x_1^2+x_2^2+\dots+x_n^2}.
-$$
+```
+
 
 Расстояние между двумя векторами:
 
-$$
+```math
 d(\mathbf{a},\mathbf{b})=\|\mathbf{a}-\mathbf{b}\|_2.
-$$
+```
+
 
 ### Задача 3
 
 Найдите длину вектора
 
-$$
+```math
 \mathbf{v}=
 \begin{bmatrix}
 5\\
 12
 \end{bmatrix}.
-$$
+```
 
-<details>
-<summary><strong>Решение</strong></summary>
 
-$$
+#### Решение
+
+
+```math
 \|\mathbf{v}\|=\sqrt{5^2+12^2}=\sqrt{25+144}=13.
-$$
+```
 
-</details>
 
 ### Задача 4
 
 Даны два объекта:
 
-$$
+```math
 \mathbf{a}=
 \begin{bmatrix}
 1\\
@@ -173,42 +179,44 @@ $$
 4\\
 6
 \end{bmatrix}.
-$$
+```
+
 
 Найдите евклидово расстояние между ними.
 
-<details>
-<summary><strong>Решение</strong></summary>
+#### Решение
 
-$$
+
+```math
 \mathbf{b}-\mathbf{a}=
 \begin{bmatrix}
 3\\
 4
 \end{bmatrix}.
-$$
+```
 
-$$
+
+```math
 d(\mathbf{a},\mathbf{b})=\sqrt{3^2+4^2}=5.
-$$
+```
 
-</details>
 
 ### Задача 5
 
 Есть запрос
 
-$$
+```math
 \mathbf{q}=
 \begin{bmatrix}
 2\\
 3
 \end{bmatrix}
-$$
+```
+
 
 и три объекта:
 
-$$
+```math
 \mathbf{a}=
 \begin{bmatrix}
 2\\
@@ -226,40 +234,43 @@ $$
 1\\
 1
 \end{bmatrix}.
-$$
+```
+
 
 Какой объект ближе всего к запросу?
 
-<details>
-<summary><strong>Решение</strong></summary>
+#### Решение
+
 
 Для $\mathbf{a}$:
 
-$$
+```math
 d(\mathbf{q},\mathbf{a})=1.
-$$
+```
+
 
 Для $\mathbf{b}$:
 
-$$
+```math
 d(\mathbf{q},\mathbf{b})=3.
-$$
+```
+
 
 Для $\mathbf{c}$:
 
-$$
+```math
 d(\mathbf{q},\mathbf{c})=\sqrt{(2-1)^2+(3-1)^2}=\sqrt5\approx2.24.
-$$
+```
+
 
 Ближе всего объект $\mathbf{a}$.
 
-</details>
 
 ### Задача 6. Почему масштаб признаков важен
 
 Два объекта описаны двумя признаками:
 
-$$
+```math
 \mathbf{a}=
 \begin{bmatrix}
 1\\
@@ -271,26 +282,27 @@ $$
 5\\
 1010
 \end{bmatrix}.
-$$
+```
+
 
 Объясните, какой признак сильнее влияет на евклидово расстояние и почему перед сравнением объектов признаки иногда нормируют.
 
-<details>
-<summary><strong>Ответ</strong></summary>
+#### Ответ
+
 
 Разность признаков равна
 
-$$
+```math
 \mathbf{b}-\mathbf{a}=
 \begin{bmatrix}
 4\\
 10
 \end{bmatrix}.
-$$
+```
+
 
 Вклад координаты в квадрат расстояния определяется квадратом разности. Первый признак даёт $16$, второй — $100$. Если масштабы признаков сильно различаются, крупномасштабный признак может доминировать независимо от его смысловой важности. Нормировка делает сравнение более сбалансированным.
 
-</details>
 
 ---
 
@@ -298,15 +310,16 @@ $$
 
 Для двух векторов одинаковой длины
 
-$$
+```math
 \mathbf{a}\cdot\mathbf{b}=a_1b_1+a_2b_2+\dots+a_nb_n.
-$$
+```
+
 
 ### Задача 7
 
 Вычислите
 
-$$
+```math
 \begin{bmatrix}
 2\\
 3\\
@@ -318,92 +331,98 @@ $$
 -2\\
 5
 \end{bmatrix}.
-$$
+```
 
-<details>
-<summary><strong>Решение</strong></summary>
 
-$$
+#### Решение
+
+
+```math
 2\cdot4+3\cdot(-2)+(-1)\cdot5=8-6-5=-3.
-$$
+```
 
-</details>
 
 ### Задача 8. Искусственный нейрон
 
 Вход:
 
-$$
+```math
 \mathbf{x}=
 \begin{bmatrix}
 2\\
 1\\
 3
 \end{bmatrix}.
-$$
+```
+
 
 Веса:
 
-$$
+```math
 \mathbf{w}=
 \begin{bmatrix}
 0.5\\
 -1\\
 2
 \end{bmatrix}.
-$$
+```
+
 
 Смещение:
 
-$$
+```math
 b=-2.
-$$
+```
+
 
 Вычислите
 
-$$
+```math
 z=\mathbf{w}\cdot\mathbf{x}+b
-$$
+```
+
 
 и затем примените
 
-$$
-a=\operatorname{ReLU}(z)=\max(0,z).
-$$
+```math
+a=\mathrm{ReLU}(z)=\max(0,z).
+```
 
-<details>
-<summary><strong>Решение</strong></summary>
 
-$$
+#### Решение
+
+
+```math
 \mathbf{w}\cdot\mathbf{x}=0.5\cdot2+(-1)\cdot1+2\cdot3=1-1+6=6.
-$$
+```
 
-$$
+
+```math
 z=6-2=4.
-$$
+```
 
-$$
-a=\operatorname{ReLU}(4)=4.
-$$
 
-</details>
+```math
+a=\mathrm{ReLU}(4)=4.
+```
+
 
 ### Задача 9
 
 Даны два вектора единичной длины, и их скалярное произведение равно $0.92$. Что можно сказать об угле между ними?
 
-<details>
-<summary><strong>Ответ</strong></summary>
+#### Ответ
+
 
 Для единичных векторов
 
-$$
+```math
 \mathbf{a}\cdot\mathbf{b}=\cos\theta.
-$$
+```
+
 
 Значение $0.92$ близко к $1$, поэтому угол между векторами небольшой, а направления похожи.
 
-</details>
 
 ---
 
@@ -411,15 +430,16 @@ $$
 
 Косинусное сходство вычисляется по формуле
 
-$$
+```math
 \cos\theta=\frac{\mathbf{a}\cdot\mathbf{b}}{\|\mathbf{a}\|\|\mathbf{b}\|}.
-$$
+```
+
 
 ### Задача 10
 
 Даны
 
-$$
+```math
 \mathbf{a}=
 \begin{bmatrix}
 1\\
@@ -431,48 +451,52 @@ $$
 1\\
 1
 \end{bmatrix}.
-$$
+```
+
 
 Найдите косинусное сходство.
 
-<details>
-<summary><strong>Решение</strong></summary>
+#### Решение
 
-$$
+
+```math
 \mathbf{a}\cdot\mathbf{b}=1.
-$$
+```
 
-$$
+
+```math
 \|\mathbf{a}\|=1,
-$$
+```
 
-$$
+
+```math
 \|\mathbf{b}\|=\sqrt2.
-$$
+```
+
 
 Поэтому
 
-$$
+```math
 \cos\theta=\frac{1}{\sqrt2}\approx0.707.
-$$
+```
 
-</details>
 
 ### Задача 11. Семантический поиск
 
 Пусть embedding запроса равен
 
-$$
+```math
 \mathbf{q}=
 \begin{bmatrix}
 1\\
 0
 \end{bmatrix}.
-$$
+```
+
 
 Документы представлены векторами
 
-$$
+```math
 \mathbf{d}_1=
 \begin{bmatrix}
 0.9\\
@@ -484,16 +508,16 @@ $$
 0.2\\
 0.98
 \end{bmatrix}.
-$$
+```
+
 
 Без точного вычисления объясните, какой документ, скорее всего, семантически ближе к запросу по косинусному сходству.
 
-<details>
-<summary><strong>Ответ</strong></summary>
+#### Ответ
+
 
 Вектор $\mathbf{d}_1$ направлен почти так же, как $\mathbf{q}$: его первая координата велика, а вторая мала. Вектор $\mathbf{d}_2$ направлен почти вертикально. Поэтому $\mathbf{d}_1$ будет иметь большее косинусное сходство с запросом.
 
-</details>
 
 ---
 
@@ -505,15 +529,16 @@ $$
 
 Определите форму каждой матрицы:
 
-$$
+```math
 A=
 \begin{bmatrix}
 1&2&3\\
 4&5&6
 \end{bmatrix},
-$$
+```
 
-$$
+
+```math
 B=
 \begin{bmatrix}
 1\\
@@ -521,51 +546,50 @@ B=
 3\\
 4
 \end{bmatrix},
-$$
+```
 
-$$
+
+```math
 C=
 \begin{bmatrix}
 1&2\\
 3&4\\
 5&6
 \end{bmatrix}.
-$$
+```
 
-<details>
-<summary><strong>Решение</strong></summary>
+
+#### Решение
+
 
 - $A$: $2\times3$.
 - $B$: $4\times1$.
 - $C$: $3\times2$.
 
-</details>
 
 ### Задача 13
 
 Набор данных содержит $500$ объектов и $12$ признаков на объект. Если строки соответствуют объектам, а столбцы — признакам, какова форма матрицы данных?
 
-<details>
-<summary><strong>Ответ</strong></summary>
+#### Ответ
 
-$$
+
+```math
 500\times12.
-$$
+```
 
-</details>
 
 ### Задача 14
 
 Цветное изображение имеет высоту $128$ пикселей, ширину $256$ пикселей и три цветовых канала. Какую форму может иметь его тензор при порядке «высота × ширина × каналы»?
 
-<details>
-<summary><strong>Ответ</strong></summary>
+#### Ответ
 
-$$
+
+```math
 128\times256\times3.
-$$
+```
 
-</details>
 
 ---
 
@@ -573,27 +597,30 @@ $$
 
 Если
 
-$$
+```math
 A\in\mathbb{R}^{m\times n}
-$$
+```
+
 
 и
 
-$$
+```math
 \mathbf{x}\in\mathbb{R}^{n},
-$$
+```
+
 
 то
 
-$$
+```math
 A\mathbf{x}\in\mathbb{R}^{m}.
-$$
+```
+
 
 ### Задача 15
 
 Вычислите
 
-$$
+```math
 A=
 \begin{bmatrix}
 1&2\\
@@ -605,12 +632,13 @@ A=
 5\\
 6
 \end{bmatrix}.
-$$
+```
 
-<details>
-<summary><strong>Решение</strong></summary>
 
-$$
+#### Решение
+
+
+```math
 A\mathbf{x}=
 \begin{bmatrix}
 1\cdot5+2\cdot6\\
@@ -621,31 +649,28 @@ A\mathbf{x}=
 17\\
 39
 \end{bmatrix}.
-$$
+```
 
-</details>
 
 ### Задача 16
 
 Можно ли умножить матрицу формы $4\times3$ на вектор длины $4$ справа, то есть вычислить $A\mathbf{x}$?
 
-<details>
-<summary><strong>Ответ</strong></summary>
+#### Ответ
+
 
 Нет. Для произведения $A\mathbf{x}$ длина вектора должна совпадать с числом столбцов матрицы. Здесь требуется вектор длины $3$.
 
-</details>
 
 ### Задача 17
 
 Матрица $W$ имеет форму $6\times10$. Какой длины должен быть входной вектор $\mathbf{x}$? Какой длины будет $W\mathbf{x}$?
 
-<details>
-<summary><strong>Ответ</strong></summary>
+#### Ответ
+
 
 Входной вектор должен иметь длину $10$. Результат будет иметь длину $6$.
 
-</details>
 
 ---
 
@@ -653,9 +678,10 @@ $$
 
 Полносвязный слой можно записать так:
 
-$$
+```math
 \mathbf{z}=W\mathbf{x}+\mathbf{b}.
-$$
+```
+
 
 Затем к $\mathbf{z}$ часто применяют функцию активации.
 
@@ -663,39 +689,42 @@ $$
 
 Пусть
 
-$$
+```math
 \mathbf{x}=
 \begin{bmatrix}
 2\\
 1\\
 3
 \end{bmatrix},
-$$
+```
 
-$$
+
+```math
 W=
 \begin{bmatrix}
 1&0&-1\\
 2&1&0
 \end{bmatrix},
-$$
+```
 
-$$
+
+```math
 \mathbf{b}=
 \begin{bmatrix}
 1\\
 -2
 \end{bmatrix}.
-$$
+```
+
 
 Найдите $\mathbf{z}=W\mathbf{x}+\mathbf{b}$, затем примените ReLU поэлементно.
 
-<details>
-<summary><strong>Решение</strong></summary>
+#### Решение
+
 
 Сначала
 
-$$
+```math
 W\mathbf{x}=
 \begin{bmatrix}
 1\cdot2+0\cdot1-1\cdot3\\
@@ -706,69 +735,70 @@ W\mathbf{x}=
 -1\\
 5
 \end{bmatrix}.
-$$
+```
+
 
 Добавим смещение:
 
-$$
+```math
 \mathbf{z}=
 \begin{bmatrix}
 0\\
 3
 \end{bmatrix}.
-$$
+```
+
 
 После ReLU:
 
-$$
+```math
 \mathbf{a}=
 \begin{bmatrix}
 0\\
 3
 \end{bmatrix}.
-$$
+```
 
-</details>
 
 ### Задача 19
 
 Слой получает $20$ входных признаков и выдаёт $8$ чисел. Какую форму должна иметь матрица весов $W$? Какую длину должен иметь вектор смещений $\mathbf{b}$?
 
-<details>
-<summary><strong>Ответ</strong></summary>
+#### Ответ
 
-$$
+
+```math
 W:8\times20,
-$$
+```
 
-$$
+
+```math
 \mathbf{b}:8.
-$$
+```
 
-</details>
 
 ### Задача 20
 
 Сколько весовых коэффициентов содержит матрица слоя из предыдущей задачи? Сколько всего обучаемых параметров в слое вместе со смещениями?
 
-<details>
-<summary><strong>Решение</strong></summary>
+#### Решение
+
 
 Весов:
 
-$$
+```math
 8\cdot20=160.
-$$
+```
+
 
 Смещений: $8$.
 
 Всего:
 
-$$
+```math
 160+8=168.
-$$
+```
 
-</details>
 
 ---
 
@@ -776,15 +806,17 @@ $$
 
 Для произведения
 
-$$
+```math
 A_{m\times n}B_{n\times p}
-$$
+```
+
 
 внутренние размерности должны совпадать, а результат имеет форму
 
-$$
+```math
 m\times p.
-$$
+```
+
 
 ### Задача 21
 
@@ -795,21 +827,20 @@ $$
 3. $(7\times1)(1\times6)$;
 4. $(4\times4)(4\times2)$.
 
-<details>
-<summary><strong>Решение</strong></summary>
+#### Решение
+
 
 1. Существует, форма $2\times4$.
 2. Не существует: внутренние размеры $2$ и $3$ не совпадают.
 3. Существует, форма $7\times6$.
 4. Существует, форма $4\times2$.
 
-</details>
 
 ### Задача 22
 
 Вычислите
 
-$$
+```math
 A=
 \begin{bmatrix}
 1&2\\
@@ -821,14 +852,15 @@ B=
 2&0\\
 1&5
 \end{bmatrix}.
-$$
+```
+
 
 Найдите $AB$ и $BA$. Совпадают ли результаты?
 
-<details>
-<summary><strong>Решение</strong></summary>
+#### Решение
 
-$$
+
+```math
 AB=
 \begin{bmatrix}
 1\cdot2+2\cdot1 & 1\cdot0+2\cdot5\\
@@ -839,9 +871,10 @@ AB=
 4&10\\
 10&20
 \end{bmatrix}.
-$$
+```
 
-$$
+
+```math
 BA=
 \begin{bmatrix}
 2\cdot1+0\cdot3 & 2\cdot2+0\cdot4\\
@@ -852,15 +885,15 @@ BA=
 2&4\\
 16&22
 \end{bmatrix}.
-$$
+```
+
 
 Результаты различаются. Это демонстрирует, что обычно
 
-$$
+```math
 AB\ne BA.
-$$
+```
 
-</details>
 
 ---
 
@@ -872,29 +905,29 @@ $$
 
 Для
 
-$$
+```math
 A=
 \begin{bmatrix}
 1&2&3\\
 4&5&6
 \end{bmatrix}
-$$
+```
+
 
 найдите $A^T$.
 
-<details>
-<summary><strong>Решение</strong></summary>
+#### Решение
 
-$$
+
+```math
 A^T=
 \begin{bmatrix}
 1&4\\
 2&5\\
 3&6
 \end{bmatrix}.
-$$
+```
 
-</details>
 
 ---
 
@@ -902,7 +935,7 @@ $$
 
 Пусть три объекта представлены нормированными embeddings:
 
-$$
+```math
 \mathbf{e}_1=
 \begin{bmatrix}
 1\\
@@ -920,39 +953,40 @@ $$
 -1\\
 0
 \end{bmatrix}.
-$$
+```
+
 
 ### Задача 24
 
 Сравните направления $\mathbf{e}_1$ с $\mathbf{e}_2$ и $\mathbf{e}_3$. Какой объект ближе по косинусному сходству к $\mathbf{e}_1$?
 
-<details>
-<summary><strong>Решение</strong></summary>
+#### Решение
+
 
 Поскольку векторы нормированы, косинусное сходство равно скалярному произведению.
 
-$$
+```math
 \mathbf{e}_1\cdot\mathbf{e}_2=0.8,
-$$
+```
 
-$$
+
+```math
 \mathbf{e}_1\cdot\mathbf{e}_3=-1.
-$$
+```
+
 
 Значит, $\mathbf{e}_2$ похож по направлению, а $\mathbf{e}_3$ направлен противоположно. Ближе $\mathbf{e}_2$.
 
-</details>
 
 ### Задача 25
 
 Почему при поиске похожих текстов иногда используют косинусное сходство, а не только евклидово расстояние?
 
-<details>
-<summary><strong>Ответ</strong></summary>
+#### Ответ
+
 
 Косинусное сходство сравнивает направление векторов и меньше зависит от их длины. Если длина embedding не должна влиять на смысловое сходство, такая мера бывает удобнее. Выбор конкретной метрики зависит от того, как были обучены и нормированы embeddings.
 
-</details>
 
 ---
 
@@ -960,59 +994,65 @@ $$
 
 Если функция ошибки зависит от нескольких параметров,
 
-$$
+```math
 L=L(w_1,w_2,w_3),
-$$
+```
+
 
 то градиент имеет вид
 
-$$
+```math
 \nabla L=
 \begin{bmatrix}
 \frac{\partial L}{\partial w_1}\\
 \frac{\partial L}{\partial w_2}\\
 \frac{\partial L}{\partial w_3}
 \end{bmatrix}.
-$$
+```
+
 
 ### Задача 26
 
 Пусть текущий вектор параметров
 
-$$
+```math
 \mathbf{w}=
 \begin{bmatrix}
 2\\
 -1
 \end{bmatrix},
-$$
+```
+
 
 а градиент
 
-$$
+```math
 \nabla L=
 \begin{bmatrix}
 4\\
 -2
 \end{bmatrix}.
-$$
+```
+
 
 Скорость обучения равна
 
-$$
+```math
 \eta=0.1.
-$$
+```
+
 
 Выполните шаг градиентного спуска:
 
-$$
+```math
 \mathbf{w}_{\text{new}}=\mathbf{w}-\eta\nabla L.
-$$
+```
 
-<details>
-<summary><strong>Решение</strong></summary>
 
-$$
+#### Решение
+
+
+```math
 \eta\nabla L=
 0.1
 \begin{bmatrix}
@@ -1024,11 +1064,12 @@ $$
 0.4\\
 -0.2
 \end{bmatrix}.
-$$
+```
+
 
 Тогда
 
-$$
+```math
 \mathbf{w}_{\text{new}}=
 \begin{bmatrix}
 2\\
@@ -1044,9 +1085,8 @@ $$
 1.6\\
 -0.8
 \end{bmatrix}.
-$$
+```
 
-</details>
 
 ---
 
@@ -1054,17 +1094,18 @@ $$
 
 Пусть входной вектор
 
-$$
+```math
 \mathbf{x}=
 \begin{bmatrix}
 1\\
 2
 \end{bmatrix}.
-$$
+```
+
 
 Первый слой:
 
-$$
+```math
 W_1=
 \begin{bmatrix}
 1&-1\\
@@ -1076,40 +1117,43 @@ W_1=
 0\\
 -1
 \end{bmatrix}.
-$$
+```
+
 
 После первого слоя применяется ReLU.
 
 Второй слой имеет веса
 
-$$
+```math
 \mathbf{w}_2=
 \begin{bmatrix}
 3\\
 -2
 \end{bmatrix}
-$$
+```
+
 
 и смещение
 
-$$
+```math
 b_2=1.
-$$
+```
+
 
 ### Задача 27
 
 Вычислите выход модели:
 
 1. $\mathbf{z}_1=W_1\mathbf{x}+\mathbf{b}_1$;
-2. $\mathbf{a}_1=\operatorname{ReLU}(\mathbf{z}_1)$;
+2. $\mathbf{a}_1=\mathrm{ReLU}(\mathbf{z}_1)$;
 3. $z_2=\mathbf{w}_2\cdot\mathbf{a}_1+b_2$.
 
-<details>
-<summary><strong>Решение</strong></summary>
+#### Решение
+
 
 Первый слой:
 
-$$
+```math
 W_1\mathbf{x}=
 \begin{bmatrix}
 1\cdot1+(-1)\cdot2\\
@@ -1120,37 +1164,40 @@ W_1\mathbf{x}=
 -1\\
 4
 \end{bmatrix}.
-$$
+```
+
 
 Добавляем смещение:
 
-$$
+```math
 \mathbf{z}_1=
 \begin{bmatrix}
 -1\\
 3
 \end{bmatrix}.
-$$
+```
+
 
 Применяем ReLU:
 
-$$
+```math
 \mathbf{a}_1=
 \begin{bmatrix}
 0\\
 3
 \end{bmatrix}.
-$$
+```
+
 
 Второй слой:
 
-$$
+```math
 z_2=3\cdot0+(-2)\cdot3+1=-5.
-$$
+```
+
 
 **Ответ:** выход модели равен $-5$.
 
-</details>
 
 ---
 
@@ -1167,8 +1214,8 @@ $$
 9. Почему $AB$ обычно не равно $BA$?
 10. Как связан градиент с векторами?
 
-<details>
-<summary><strong>Ответы</strong></summary>
+#### Ответы
+
 
 1. $10$.
 2. $1\cdot4+2\cdot0+3\cdot(-1)=1$.
@@ -1180,5 +1227,3 @@ $$
 8. Косинусное сходство сравнивает направления, евклидово расстояние — расстояние между точками в пространстве.
 9. Матричное умножение некоммутативно: перестановка множителей меняет порядок преобразований.
 10. Градиент — это вектор частных производных функции ошибки по параметрам.
-
-</details>
