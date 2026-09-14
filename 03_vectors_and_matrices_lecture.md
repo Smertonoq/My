@@ -1187,8 +1187,6 @@ $$
 8. Параметры модели и их градиенты сами являются векторами и матрицами.
 9. Обучение модели означает изменение этих числовых объектов так, чтобы уменьшить функцию ошибки.
 
-Линейная алгебра поэтому является не отдельной теоретической темой, а рабочим языком современной машинной модели.
-
 ---
 
 ## 31. Вопросы для самопроверки
@@ -1233,13 +1231,4 @@ $$
 </details>
 
 ---
-
-## 32. Для дальнейшего изучения
-
-- 3Blue1Brown — *Essence of Linear Algebra*: <https://www.3blue1brown.com/topics/linear-algebra>
-- MIT OpenCourseWare — Linear Algebra: <https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/>
-- *Deep Learning*, Ian Goodfellow, Yoshua Bengio, Aaron Courville — Chapter 2: <https://www.deeplearningbook.org/contents/linear_algebra.html>
-
----
-
 **Предыдущая тема:** [Функции и производные](01_functions_and_derivatives_lecture.md)
