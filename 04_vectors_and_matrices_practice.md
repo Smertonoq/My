@@ -239,31 +239,6 @@ d(\mathbf{a},\mathbf{b})=\sqrt{3^2+4^2}=5.
 
 Какой объект ближе всего к запросу?
 
-#### Решение
-
-
-Для $\mathbf{a}$:
-
-```math
-d(\mathbf{q},\mathbf{a})=1.
-```
-
-
-Для $\mathbf{b}$:
-
-```math
-d(\mathbf{q},\mathbf{b})=3.
-```
-
-
-Для $\mathbf{c}$:
-
-```math
-d(\mathbf{q},\mathbf{c})=\sqrt{(2-1)^2+(3-1)^2}=\sqrt5\approx2.24.
-```
-
-
-Ближе всего объект $\mathbf{a}$.
 
 
 ### Задача 6. Почему масштаб признаков важен
@@ -341,6 +316,23 @@ d(\mathbf{q},\mathbf{c})=\sqrt{(2-1)^2+(3-1)^2}=\sqrt5\approx2.24.
 2\cdot4+3\cdot(-2)+(-1)\cdot5=8-6-5=-3.
 ```
 
+### Задача 7A
+Вычислите
+```math
+
+\begin{bmatrix}
+3\\
+-1\\
+4
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+1\\
+5\\
+-2
+\end{bmatrix}
+```
+
 
 ### Задача 8. Искусственный нейрон
 
@@ -382,11 +374,7 @@ z=\mathbf{w}\cdot\mathbf{x}+b
 ```
 
 
-и затем примените
 
-```math
-a=\mathrm{ReLU}(z)=\max(0,z).
-```
 
 
 #### Решение
@@ -401,10 +389,6 @@ a=\mathrm{ReLU}(z)=\max(0,z).
 z=6-2=4.
 ```
 
-
-```math
-a=\mathrm{ReLU}(4)=4.
-```
 
 
 ### Задача 9
@@ -478,8 +462,24 @@ a=\mathrm{ReLU}(4)=4.
 
 ```math
 \cos\theta=\frac{1}{\sqrt2}\approx0.707.
+
 ```
 
+### Задача 10 A. Найдите косинусное сходство.
+```math
+\mathbf{a}=
+\begin{bmatrix}
+3\\
+4
+\end{bmatrix},
+\qquad
+\mathbf{b}=
+\begin{bmatrix}
+1\\
+0
+\end{bmatrix}.
+
+```
 
 ### Задача 11. Семантический поиск
 
